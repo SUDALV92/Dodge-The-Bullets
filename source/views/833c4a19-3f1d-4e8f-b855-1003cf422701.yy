@@ -1,0 +1,31 @@
+{
+    "id": "833c4a19-3f1d-4e8f-b855-1003cf422701",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "833c4a19-3f1d-4e8f-b855-1003cf422701",
+    "children": [
+        "3b4c7efb-4a4a-4bb3-991d-fbbea7f95cb6",
+        "3bfe756d-67cf-49cc-9244-731a31460c3f",
+        "6e00bb3f-166b-41e6-bc2a-04d8bb81f121",
+        "aacfcd9b-f2e4-4c58-bb2a-0a6b996b5db1",
+        "fbb4b560-ec78-404a-867e-ec94f389b9d0",
+        "1c472fe9-7990-4da6-bc64-e098d6133075",
+        "748b4034-3422-4ff6-8bbc-7af2735853f4",
+        "ec8325d3-fa32-4a61-917f-4efbc65489f7",
+        "ca2015f4-ee79-425c-a682-d2acc5c409d2",
+        "b4189272-dc5f-4d28-88ad-4e406ddcb1f3",
+        "17ca63ae-1333-4233-8d9a-9c4bafa6f8c5",
+        "2f936d13-8db0-406b-a7ae-2fc4915eabd2",
+        "26461c8b-adb5-4a35-9b42-6dc2a92fba5d",
+        "50b4f0e4-63b1-4154-b3bf-1681e3daea61",
+        "2aaa9cdb-c08f-4e3f-b591-94ca9e3fdb50",
+        "f378aadc-6681-4cb2-9506-63df3ebee1f4",
+        "9084c12e-75cb-4197-ae62-58c3ce3a4d67",
+        "5bdda846-894b-46cb-a41d-1625b4d6bd43",
+        "d7ba03d5-25b6-4d2a-8a26-a2b1c8779ecd"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "DodgeTheBullets",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

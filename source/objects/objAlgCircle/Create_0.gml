@@ -1,0 +1,12 @@
+/// @description code
+spawnNumber = 0;
+angle = 0;
+radius = 0;
+mode = 0;
+sprite = sprAlgSphereGrad;
+color = c_white;
+scale = 1.5;
+bullets = ds_list_create();
+data[1] = 0;
+t = 0;
+hold = true;
