@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "22acfecc-5f08-42e6-9673-3387b661a33f",
+            "Value": {
+                "id": "bfa836b1-b54f-4136-bf48-3940ace32958",
+                "resourcePath": "scripts\\scrDTBGetRandomColors\\scrDTBGetRandomColors.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "22e51878-a6de-4f28-a7f7-fd45650855ca",
             "Value": {
                 "id": "80b15838-edb7-4150-8f64-be3c8e80de60",
@@ -1143,6 +1151,22 @@
             }
         },
         {
+            "Key": "6a5318ec-87b2-4ba3-b61a-81590a0bea59",
+            "Value": {
+                "id": "a1899237-2909-4d51-81d1-6009e2bc1035",
+                "resourcePath": "shaders\\shdAlgGreyScale\\shdAlgGreyScale.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "6b18c4b3-e818-4e79-be60-daf0361947c0",
+            "Value": {
+                "id": "ed3e2983-ac97-42c1-aa55-0925516058b2",
+                "resourcePath": "objects\\objAlgDeathController\\objAlgDeathController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b6a7565-d73d-4729-bd9d-fbf8ae1ffd0d",
             "Value": {
                 "id": "23abfc2a-0f86-43a5-9cb4-0620575e52ef",
@@ -1787,6 +1811,14 @@
             "Value": {
                 "id": "e21ed7ff-5b55-4963-bace-ad18714ff5a5",
                 "resourcePath": "objects\\oMiniSpikeLeft\\oMiniSpikeLeft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ad3e3fcd-5dc0-4b33-a82d-a3c904ff82ff",
+            "Value": {
+                "id": "07031b5e-ef1d-4ea1-b91d-c5d0e866639b",
+                "resourcePath": "objects\\objAlgDeadPlayer\\objAlgDeadPlayer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2774,6 +2806,7 @@
         "ba2798db-a18f-4f57-90d4-a8f14531eb6a",
         "d1a768eb-2ea3-4bc9-ab7b-89d4a5c58072",
         "4b37cf75-911a-4a30-92f3-7cbd5fd2443f",
+        "22acfecc-5f08-42e6-9673-3387b661a33f",
         "21d73d33-c7e8-461a-8a9b-eb330b6f17de"
     ],
     "tutorial": ""

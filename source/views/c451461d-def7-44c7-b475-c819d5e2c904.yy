@@ -11,7 +11,9 @@
         "684aa299-3fa8-49ad-bbad-51b88ca57464",
         "b3686329-5c91-4dc2-a7af-45211f7f6d77",
         "426b4a9b-1501-43db-9468-e3109f447f1e",
-        "4ecc8a83-be8b-4fb8-a6ef-300f93efdc87"
+        "4ecc8a83-be8b-4fb8-a6ef-300f93efdc87",
+        "6b18c4b3-e818-4e79-be60-daf0361947c0",
+        "ad3e3fcd-5dc0-4b33-a82d-a3c904ff82ff"
     ],
     "filterType": "GMObject",
     "folderName": "DodgeTheBullets",

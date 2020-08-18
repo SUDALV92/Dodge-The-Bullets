@@ -69,7 +69,7 @@ switch(mode)
 		y = ystart + lengthdir_y(abs(dcos(data[1])*data[0])/2,data[1]);
 		data[1] += 4;
 		
-		if(t % 5 == 0)
+		if(t % 6 == 0)
 		{
 			bullet = instance_create_layer( x, y, "Bullets", objAlgBullet );
 			bullet.sprite_index = sprite_index;

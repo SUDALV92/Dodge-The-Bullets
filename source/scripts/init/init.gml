@@ -26,7 +26,7 @@ global.Autosave = false; // Makes the player save(true) on next creation
 global.Difficulty = 0; // Not really implemented - only used in saves
 global.IsPaused = false; // Determines if the game is paused
 global.TimeTicking = true; // Determines if time should be incrementing
-global.WindowTitle = "ShiftEngine Game";
+global.WindowTitle = "I wanna Dodge The Bullets";
 // Death and time information format - %T - time, %D - deaths
 global.DeathtimeTitleFormat = " - Deaths: %D | Time: %T"; // Parsed in update_title automatically
 

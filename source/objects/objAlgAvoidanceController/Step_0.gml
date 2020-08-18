@@ -1,7 +1,7 @@
 if(!instance_exists(oPlayer)) exit;
 
 #region PRACTICE
-if(keyboard_check_pressed(ord("1")))
+/*if(keyboard_check_pressed(ord("1")))
 {
 	avoidance_set_step(attacks[| 0]);	
 }
@@ -47,7 +47,7 @@ if(keyboard_check_pressed(ord("9")))
 	oPlayer.y = 450;
 	instance_destroy(objAlgBlock);
 	room_set_infinite_jump(true);
-}
+}*/
 #endregion
 var t = Avoidance.Step;
 #region 0. INTRO
@@ -56,6 +56,7 @@ next = attacks[| 1];
 
 if(t == current)
 {
+	instance_create_layer(0,0,"Controller",objAlgDeathController);
 	with(objAlgBlock)
 	{
 		color = make_color_rgb(53,22,0);
@@ -114,12 +115,12 @@ if(t == current + 320)
 }
 if(t == current + 420)
 {
-	spawner = spawner_create_layer(-100,-100,"Bullets",7,objAlgBulletSpawned,280);
+	spawner = spawner_create_layer(-100,-100,"Bullets",8,objAlgBulletSpawned,280);
 	spawner.mode = 0;
 	spawner.data[0] = 0;
 	spawner.targetSpeed = 5;
 	
-	spawner = spawner_create_layer(1300,-100,"Bullets",7,objAlgBulletSpawned,280);
+	spawner = spawner_create_layer(1300,-100,"Bullets",8,objAlgBulletSpawned,280);
 	spawner.mode = 0;
 	spawner.data[0] = 1;
 	spawner.targetSpeed = 5;
@@ -148,7 +149,7 @@ if(t > current + 550 && t < current + 700)
 		targetSpeed += 0.1;	
 	}	
 }
-if(t == next - 75)
+if(t == next - 50)
 {
 	with(objAlgBulletSpawned)
 	{
@@ -163,7 +164,7 @@ if(t == next - 1)
 	}	
 }
 #endregion
-#region 1.
+#region 1. STARS
 current = attacks[| 1];
 next = attacks[| 2];
 
@@ -217,11 +218,12 @@ if(t == current + 790)
 	}
 }
 #endregion
-#region 2. 
+#region 2. BIG SPHERES
 current = attacks[| 2];
 next = attacks[| 3];
 if(t == current)
 {
+	colors = scrDTBGetRandomColors(3);
 	bullet = instance_create_layer(50,250,"Bullets",objAlgBullet);
 	bullet.sprite_index = sprAlgFullCircle;
 	instance_set_scale(bullet,5);
@@ -230,7 +232,7 @@ if(t == current)
 	bullet.mode = 2;
 	bullet.data[0] = 0;
 	bullet.smoothing = true;
-	bullet.color = scrDTBGetRandomColor();
+	bullet.color = colors[| 0];
 	bullet.blend = true;
 	bullet.alarm[0] = irandom_range(5,10);
 	executor_create(30,scrDTBAttack2Horizontal,780);	
@@ -245,7 +247,7 @@ if(t == current + 390)
 	killer_set_active(bullet,false);
 	bullet.mode = 2;
 	bullet.data[0] = 2;
-	bullet.color = scrDTBGetRandomColor();
+	bullet.color = colors[| 1];
 	bullet.blend = true;
 	bullet.smoothing = true;
 	bullet.alarm[0] = irandom_range(5,10);
@@ -258,7 +260,7 @@ if(t == current + 390)
 	killer_set_active(bullet,false);
 	bullet.mode = 2;
 	bullet.data[0] = 2;
-	bullet.color = scrDTBGetRandomColor();
+	bullet.color = colors[| 2];
 	bullet.blend = true;
 	bullet.smoothing = true;
 	bullet.alarm[0] = irandom_range(5,10);
@@ -298,7 +300,7 @@ if(t == next - 1)
 	}
 }
 #endregion
-#region 3.
+#region 3. HORIZONTAL ARROWS
 current = attacks[| 3];
 next = attacks[| 4];
 if(t == current)
@@ -310,6 +312,7 @@ if(t == current)
 		spawner = spawner_create_layer(spawnX,spawnY,"Bullets",8,objAlgBulletSpawned,390);
 		spawner.mode = 3;
 		spawner.data[0] = 0;
+		spawner.data[1] = choose(-1,1);
 		
 		spawnY += 300;
 	}
@@ -360,6 +363,7 @@ if(t == current + 590)
 		spawner = spawner_create_layer(spawnX,spawnY,"Bullets",12,objAlgBulletSpawned,200);
 		spawner.mode = 3;
 		spawner.data[0] = 1; //включить ускорение
+		spawner.data[1] = choose(-1,1);
 		spawner.targetSpeed = 8;
 		spawnY += 300;
 	}
@@ -702,7 +706,7 @@ if(t == current + 590)
 		data[0] = -3;	
 	}
 }
-if(t == current + 720)
+if(t == current + 700)
 {
 	with(objAlgBullet)
 	{
@@ -713,11 +717,11 @@ if(t == current + 750)
 {
 	with(circle)
 	{
-		data[1] = 3.5;
+		data[1] = 6.5;
 	}
 	with(objAlgPlatform)
 	{
-		instance_fade_out(id,60);
+		instance_fade_out(id,40);
 	}
 	with(objAlgBackground)
 	{
@@ -750,7 +754,7 @@ next = attacks[| 10];
 if(t == current)
 {
 	targetScale = 0.6;
-	targetSpeed = 4;
+	targetSpeed = 2;
 	scrDTBAttack9(50,250,targetScale,targetSpeed);
 }
 if(t == current + 15)
@@ -942,10 +946,10 @@ current = attacks[| 11];
 
 if(t == current)
 {
-	spawner = spawner_create_layer( 96, 912, "Bullets", 5, objAlgBulletSpawned, 400 );
+	spawner = spawner_create_layer( 96, 912, "Bullets", 6, objAlgBulletSpawned, 400 );
 	spawner.mode = 11;
 	
-	spawner = spawner_create_layer( 1200-96, 912, "Bullets", 5, objAlgBulletSpawned, 400 );
+	spawner = spawner_create_layer( 1200-96, 912, "Bullets", 6, objAlgBulletSpawned, 400 );
 	spawner.mode = 11;
 }
 if(t == current + 380)
@@ -970,15 +974,18 @@ if(t == current + 380)
 	circle.spawnNumber = 16;
 	with(circle) event_user(0);
 }
-if(t == current + 600)
-{
-	with(objAlgCircle)
-	{
-		instance_destroy();
-	}
-	instance_destroy(objAlgBullet);
-}
 if(t == current + 800)
+{	
+	with(objAlgBullet)
+	{
+		instance_fade_out(id,70);
+	}
+}
+if(t == current + 865)
+{
+	instance_destroy(objAlgCircle);
+}
+if(t == current + 1000)
 {
 	global.Autosave = true;
 	room_goto(rAlgClear);

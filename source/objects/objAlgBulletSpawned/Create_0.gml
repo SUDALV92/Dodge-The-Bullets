@@ -50,26 +50,29 @@ switch(mode)
 		speed = 6;	
 		break;
 	case 3:
+		data[0] = Spawner.data[0];
 		y = y + irandom_range(-150,150);
 		sprite_index = sprAlgKunaiColored;
 		if(x < 600)
-			direction = irandom_range(-5,5);
+			direction = irandom_range(1,5) * Spawner.data[1];		
 		else
-			direction = irandom_range(175,185);
+			direction = irandom_range(1,5) * Spawner.data[1] + 180;
+			
+		Spawner.data[1] *= -1;
 			
 		color = scrDTBGetRandomColor();
 		image_angle = direction;
-		data[0] = Spawner.data[0];
+		
 		switch(data[0])
 		{
 			case 0:
-				speed = 8;
+				speed = 7;
 				break;
 			case 1:
 				speed = Spawner.targetSpeed;
 				gravity_direction = direction;
 				gravity = 0.1;
-				Spawner.targetSpeed += 0.3;
+				Spawner.targetSpeed += 0.2;
 				break;
 		}		
 		break;
