@@ -1,2 +1,6 @@
 /// avoidance_is_playing()
-return instance_exists( global.ActiveAvoidance );
+function avoidance_is_playing() {
+	return instance_exists( global.ActiveAvoidance );
+
+
+}

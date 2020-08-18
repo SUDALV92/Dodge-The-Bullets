@@ -1,8 +1,12 @@
 {
-    "id": "bcd10a39-7c37-4574-a72d-49d6a230e8ff",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "draw_debug_ui",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "internal",
+    "path": "folders/Scripts/internal.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "draw_debug_ui",
+  "tags": [],
+  "resourceType": "GMScript",
 }

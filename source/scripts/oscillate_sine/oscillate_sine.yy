@@ -1,8 +1,12 @@
 {
-    "id": "13458931-e7e8-40f4-8c23-09feffb47484",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "oscillate_sine",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "easing",
+    "path": "folders/Scripts/easing.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oscillate_sine",
+  "tags": [],
+  "resourceType": "GMScript",
 }

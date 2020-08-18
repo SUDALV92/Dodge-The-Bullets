@@ -1,8 +1,12 @@
 {
-    "id": "a3a083c1-b21d-4311-b274-13f5e1df4c1c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "instance_scale",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "instance_manipulation",
+    "path": "folders/Scripts/instance_manipulation.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "instance_scale",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "1b1506d0-9129-4c47-8189-ee5ca9968a0f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "tween_return_exp_inout",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "return",
+    "path": "folders/Scripts/easing/return.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tween_return_exp_inout",
+  "tags": [],
+  "resourceType": "GMScript",
 }

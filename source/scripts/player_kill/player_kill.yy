@@ -1,8 +1,12 @@
 {
-    "id": "93327f4f-fba8-404e-961e-ef9827b0729b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "player_kill",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "player",
+    "path": "folders/Scripts/player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "player_kill",
+  "tags": [],
+  "resourceType": "GMScript",
 }

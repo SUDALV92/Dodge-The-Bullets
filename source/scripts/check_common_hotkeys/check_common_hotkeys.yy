@@ -1,8 +1,12 @@
 {
-    "id": "c5855064-619c-44d0-9d57-b99d765ef53a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "check_common_hotkeys",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "internal",
+    "path": "folders/Scripts/internal.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "check_common_hotkeys",
+  "tags": [],
+  "resourceType": "GMScript",
 }

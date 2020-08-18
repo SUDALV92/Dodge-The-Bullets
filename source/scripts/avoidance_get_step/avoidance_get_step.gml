@@ -1,2 +1,7 @@
 /// @description  avoidance_get_step()
-return global.ActiveAvoidance.Step;
+function avoidance_get_step() {
+	return global.ActiveAvoidance.Step;
+
+
+
+}

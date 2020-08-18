@@ -1,8 +1,12 @@
 {
-    "id": "fd0328c8-133b-48c2-8d41-ca973039450e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "instance_change_color",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "instance_manipulation",
+    "path": "folders/Scripts/instance_manipulation.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "instance_change_color",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "c2bd0366-23fb-4eb6-afc0-91a2035f8be9",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "restart_game",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "saves",
+    "path": "folders/Scripts/saves.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "restart_game",
+  "tags": [],
+  "resourceType": "GMScript",
 }

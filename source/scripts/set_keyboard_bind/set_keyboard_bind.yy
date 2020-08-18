@@ -1,8 +1,12 @@
 {
-    "id": "ab13be20-e94d-498c-baac-93c794503ee9",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "set_keyboard_bind",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "controls",
+    "path": "folders/Scripts/controls.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "set_keyboard_bind",
+  "tags": [],
+  "resourceType": "GMScript",
 }

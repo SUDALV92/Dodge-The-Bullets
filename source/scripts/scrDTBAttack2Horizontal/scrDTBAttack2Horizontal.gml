@@ -1,17 +1,21 @@
-with(objAlgBullet)
-{
-	if(mode == 2)
+function scrDTBAttack2Horizontal() {
+	with(objAlgBullet)
 	{
-		if(data[0] == 0)
+		if(mode == 2)
 		{
-			if(x < 600)
+			if(data[0] == 0)
 			{
-				instance_move_to_x(id,1110,30);	
-			}
-			else
-			{
-				instance_move_to_x(id,90,30);
+				if(x < 600)
+				{
+					instance_move_to_x(id,1110,30);	
+				}
+				else
+				{
+					instance_move_to_x(id,90,30);
+				}
 			}
 		}
 	}
+
+
 }

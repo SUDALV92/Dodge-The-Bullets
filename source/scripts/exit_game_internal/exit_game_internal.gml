@@ -1,2 +1,7 @@
-//exit_game_internal()
-game_end();
+function exit_game_internal() {
+	//exit_game_internal()
+	game_end();
+
+
+
+}

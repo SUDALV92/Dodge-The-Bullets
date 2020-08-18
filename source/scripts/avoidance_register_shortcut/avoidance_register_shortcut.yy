@@ -1,8 +1,12 @@
 {
-    "id": "f5b439d5-94fa-4726-8595-86d65e9057be",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "avoidance_register_shortcut",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "avoidance",
+    "path": "folders/Scripts/avoidance.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "avoidance_register_shortcut",
+  "tags": [],
+  "resourceType": "GMScript",
 }

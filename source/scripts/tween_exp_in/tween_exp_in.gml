@@ -3,9 +3,14 @@
 /// @param  totalDelta
 /// @param  step
 /// @param  duration 
-var beginValue = argument0;
-var totalDelta = argument1;
-var step = argument2;
-var duration = argument3;
+function tween_exp_in(argument0, argument1, argument2, argument3) {
+	var beginValue = argument0;
+	var totalDelta = argument1;
+	var step = argument2;
+	var duration = argument3;
 
-return beginValue + totalDelta * power( 2, 10 * ( step / duration - 1 ) );
+	return beginValue + totalDelta * power( 2, 10 * ( step / duration - 1 ) );
+
+
+
+}

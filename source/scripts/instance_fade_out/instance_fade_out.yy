@@ -1,8 +1,12 @@
 {
-    "id": "7d99e873-c68e-48d5-85a5-4603ce9497f2",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "instance_fade_out",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "instance_manipulation",
+    "path": "folders/Scripts/instance_manipulation.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "instance_fade_out",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "3fb7b9bd-e8fd-486a-a2ee-7bb1d74cd67e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "tween_linear",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "easing",
+    "path": "folders/Scripts/easing.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tween_linear",
+  "tags": [],
+  "resourceType": "GMScript",
 }

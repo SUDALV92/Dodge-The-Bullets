@@ -1,8 +1,12 @@
 {
-    "id": "1cdf9e63-2efc-459d-9631-b27bcdbdc5ff",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "create_time_string",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "internal",
+    "path": "folders/Scripts/internal.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "create_time_string",
+  "tags": [],
+  "resourceType": "GMScript",
 }
