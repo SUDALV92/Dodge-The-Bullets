@@ -8,15 +8,34 @@ direction += curving;
 
 if(trail)
 {
-	if(t mod 6 == 0)
+	if(t mod trailInterval == 0)
 	{
-		trailBullet = instance_create_depth(x,y,depth,objAlgBullet);
-		trailBullet.sprite_index = sprite_index;
-		trailBullet.alarm[1] = 50; //outsideDelete
-		instance_set_scale(trailBullet,image_xscale);
-		trailBullet.color = color;
-		killer_set_active(trailBullet,false);
-		instance_fade_out(trailBullet,30);
+		switch(trailMode)
+		{
+			case 1:			
+				trailBullet = instance_create_depth(x,y,depth,objAlgBullet);
+				trailBullet.sprite_index = sprite_index;
+				trailBullet.alarm[1] = 50; //outsideDelete
+				instance_set_scale(trailBullet,image_xscale);
+				trailBullet.color = color;
+				killer_set_active(trailBullet,false);
+				instance_fade_out(trailBullet,30);
+				break;
+			case 2:
+				repeat(2)
+				{
+					trailBullet = instance_create_depth(x,y,depth,objAlgBullet);
+					trailBullet.sprite_index = sprAlgSphereColored;
+					trailBullet.alarm[1] = 50; //outsideDelete
+					trailBullet.direction = direction + 180 + irandom_range(-30,30);
+					trailBullet.speed = speed/2;
+					instance_set_scale(trailBullet,image_xscale*0.6);
+					trailBullet.color = color;
+					killer_set_active(trailBullet,false);
+					instance_fade_out(trailBullet,10);	
+				}
+				break;
+		}
 	}
 }
 
@@ -49,12 +68,12 @@ switch(mode)
 		break;
 	case 8:
 		image_angle -= 5;
-		if(t % 80 == 0 && data[0] == 0)
+		if(t % 150 == 0 && data[0] == 0)
 		{
 			bullet = instance_create_depth(x,y,depth - 1,objAlgBullet);
 			bullet.sprite_index = sprAlgFrag;
 			bullet.direction = random(360);
-			bullet.speed = random_range(4,6);
+			bullet.speed = random_range(5,6);
 			bullet.image_alpha = 0;
 			bullet.color = color;
 			bullet.image_angle = bullet.direction;

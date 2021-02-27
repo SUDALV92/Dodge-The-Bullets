@@ -24,10 +24,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":{"name":"bb6dcb38-d611-454f-82e7-390724d9cb14","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sSavePoint","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ceadab4b-6d8a-4483-95e3-f58849b94322","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"ceadab4b-6d8a-4483-95e3-f58849b94322","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"ceadab4b-6d8a-4483-95e3-f58849b94322","path":"sprites/sSavePoint/sSavePoint.yy",},"LayerId":{"name":"bb6dcb38-d611-454f-82e7-390724d9cb14","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sSavePoint","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","name":"ceadab4b-6d8a-4483-95e3-f58849b94322","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"559f6bc5-c2e6-4c15-ac44-f6aa9e0fe0e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"10afdd15-739b-4332-9607-44d052aef200","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ceadab4b-6d8a-4483-95e3-f58849b94322","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"21d9f78d-88a9-4349-94b2-3f5b45c29d51","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b6c5d51-d9b9-438b-9180-53f47b67e805","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"99f7c33f-4cf7-472b-b0d2-3b28ed834c4a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ceadab4b-6d8a-4483-95e3-f58849b94322","path":"sprites/sSavePoint/sSavePoint.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},

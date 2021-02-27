@@ -28,6 +28,7 @@ function init() {
 	global.IsPaused = false; // Determines if the game is paused
 	global.TimeTicking = true; // Determines if time should be incrementing
 	global.WindowTitle = "I wanna Dodge The Bullets";
+	global.gameVersion = "v1.2";
 	// Death and time information format - %T - time, %D - deaths
 	global.DeathtimeTitleFormat = " - Deaths: %D | Time: %T"; // Parsed in update_title automatically
 
@@ -50,6 +51,7 @@ function init() {
 	global.DebugInfiniteJump = false; // Unlimited air jumping
 
 	randomize();
+	//instance_create_depth( 0, 0, 0, oScheduler );
 
-	instance_create_depth(0,0,0,oScheduler); //GMS low fps bugfix
+
 }

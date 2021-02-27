@@ -23,7 +23,7 @@ switch(mode)
 		
 		if(data[1] > 1)
 		{
-			if(t % (12 - floor(data[1])) == 0)
+			if(t % (14 - floor(data[1])) == 0)
 			{
 				repeat(1)
 				{
@@ -36,6 +36,7 @@ switch(mode)
 					bullet.color = color;
 					bullet.mode = 1;
 					bullet.outsideDelete = true;
+					instance_set_scale(bullet,2);
 					scrDTBTrailAttach(bullet,7,color);
 				}
 			}
@@ -52,7 +53,7 @@ switch(mode)
 		break;
 	case 7:
 		image_angle += 5;
-		if(t % 12 == 0)
+		if(t % 15 == 0)
 		{
 			bullet = instance_create_depth(x,y,depth - 1,objAlgBullet);
 			bullet.sprite_index = sprAlgFrag;

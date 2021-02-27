@@ -1,3 +1,2 @@
-external_call(time_end_period, 1);
-
+/// @description code
 external_free("scheduler.dll");

@@ -1,53 +1,64 @@
 if(!instance_exists(oPlayer)) exit;
 
 #region PRACTICE
-/*if(keyboard_check_pressed(ord("1")))
+if(practiceEnabled)
 {
-	avoidance_set_step(attacks[| 0]);	
+	if(keyboard_check_pressed(ord("1")))
+	{
+		avoidance_set_step(attacks[| 0]);	
+	}
+	if(keyboard_check_pressed(ord("2")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 1]);	
+	}
+	if(keyboard_check_pressed(ord("3")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 2]);	
+	}
+	if(keyboard_check_pressed(ord("4")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 3]);	
+	}
+	if(keyboard_check_pressed(ord("5")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 4]);	
+	}
+	if(keyboard_check_pressed(ord("6")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 5]);	
+	}
+	if(keyboard_check_pressed(ord("7")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 7]);
+		platform = instance_create_layer(240,500,"BeyondPlayer",objAlgPlatform);
+		instance_scale_x(platform,15,0);
+		oPlayer.y = 450;
+		instance_destroy(objAlgBlock);
+	}
+	if(keyboard_check_pressed(ord("8")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 8]);
+		platform = instance_create_layer(240,500,"BeyondPlayer",objAlgPlatform);
+		instance_scale_x(platform,15,0);
+		oPlayer.y = 450;
+		instance_destroy(objAlgBlock);
+	}
+	if(keyboard_check_pressed(ord("9")))
+	{
+		instance_destroy(objAlgPlatform);
+		avoidance_set_step(attacks[| 9]);
+		oPlayer.y = 450;
+		instance_destroy(objAlgBlock);
+		room_set_infinite_jump(true);
+	}
 }
-if(keyboard_check_pressed(ord("2")))
-{
-	avoidance_set_step(attacks[| 1]);	
-}
-if(keyboard_check_pressed(ord("3")))
-{
-	avoidance_set_step(attacks[| 2]);	
-}
-if(keyboard_check_pressed(ord("4")))
-{
-	avoidance_set_step(attacks[| 3]);	
-}
-if(keyboard_check_pressed(ord("5")))
-{
-	avoidance_set_step(attacks[| 4]);	
-}
-if(keyboard_check_pressed(ord("6")))
-{
-	avoidance_set_step(attacks[| 5]);	
-}
-if(keyboard_check_pressed(ord("7")))
-{
-	avoidance_set_step(attacks[| 7]);
-	platform = instance_create_layer(240,500,"BeyondPlayer",objAlgPlatform);
-	instance_scale_x(platform,15,0);
-	oPlayer.y = 450;
-	instance_destroy(objAlgBlock);
-}
-if(keyboard_check_pressed(ord("8")))
-{
-	avoidance_set_step(attacks[| 8]);
-	platform = instance_create_layer(240,500,"BeyondPlayer",objAlgPlatform);
-	instance_scale_x(platform,15,0);
-	oPlayer.y = 450;
-	instance_destroy(objAlgBlock);
-}
-if(keyboard_check_pressed(ord("9")))
-{
-	avoidance_set_step(attacks[| 9]);
-	oPlayer.y = 450;
-	instance_destroy(objAlgBlock);
-	room_set_infinite_jump(true);
-}*/
 #endregion
 var t = Avoidance.Step;
 #region 0. INTRO
@@ -61,7 +72,7 @@ if(t == current)
 	{
 		color = make_color_rgb(53,22,0);
 	}
-	platform = instance_create_layer(432,720,"Bullets",objAlgPlatform);
+	platform = instance_create_layer(432,720,"BehindPlayer",objAlgPlatform);
 	platform.image_xscale = 7;
 	platform.image_yscale = 0;
 	platform.color = make_color_rgb(181,69,0);
@@ -78,7 +89,7 @@ if(t == current + 100)
 	circle.color = c_ltgray;
 	with(circle) event_user(0);
 	
-	platform = instance_create_layer(432,624,"Bullets",objAlgPlatform);
+	platform = instance_create_layer(432,624,"BehindPlayer",objAlgPlatform);
 	platform.image_xscale = 7;
 	platform.image_yscale = 0;
 	platform.color = make_color_rgb(181,69,0);
@@ -91,7 +102,7 @@ if(t >= current + 100 && t < current + 200)
 }
 if(t == current + 200)
 {
-	platform = instance_create_layer(432,528,"Bullets",objAlgPlatform);
+	platform = instance_create_layer(432,528,"BehindPlayer",objAlgPlatform);
 	platform.image_xscale = 7;
 	platform.image_yscale = 0;
 	platform.color = make_color_rgb(181,69,0);
@@ -146,10 +157,12 @@ if(t > current + 550 && t < current + 700)
 {
 	with(oFixedSpawner)
 	{
+		if(Period > 2)
+			Period -= 1;
 		targetSpeed += 0.1;	
 	}	
 }
-if(t == next - 50)
+if(t >= next - 70 && t < next - 1 && t % 5 == 0)
 {
 	with(objAlgBulletSpawned)
 	{
@@ -234,6 +247,8 @@ if(t == current)
 	bullet.smoothing = true;
 	bullet.color = colors[| 0];
 	bullet.blend = true;
+	bullet.trail = true;
+	bullet.trailInterval = 2;
 	bullet.alarm[0] = irandom_range(5,10);
 	executor_create(30,scrDTBAttack2Horizontal,780);	
 }
@@ -250,6 +265,8 @@ if(t == current + 390)
 	bullet.color = colors[| 1];
 	bullet.blend = true;
 	bullet.smoothing = true;
+	bullet.trail = true;
+	bullet.trailInterval = 2;
 	bullet.alarm[0] = irandom_range(5,10);
 	
 	bullet = instance_create_layer(1110,50,"Bullets",objAlgBullet);
@@ -263,6 +280,8 @@ if(t == current + 390)
 	bullet.color = colors[| 2];
 	bullet.blend = true;
 	bullet.smoothing = true;
+	bullet.trail = true;
+	bullet.trailInterval = 2;
 	bullet.alarm[0] = irandom_range(5,10);
 	
 	executor_create(30,scrDTBAttack2Vertical,325);
@@ -309,7 +328,7 @@ if(t == current)
 	spawnY = 150;
 	repeat(3)
 	{
-		spawner = spawner_create_layer(spawnX,spawnY,"Bullets",8,objAlgBulletSpawned,390);
+		spawner = spawner_create_layer(spawnX,spawnY,"Bullets",11,objAlgBulletSpawned,390);
 		spawner.mode = 3;
 		spawner.data[0] = 0;
 		spawner.data[1] = choose(-1,1);
@@ -332,7 +351,7 @@ if(t == current + 390)
 	circle.angle = random(360);
 	circle.mode = 3;
 	circle.color = scrDTBGetRandomColor();
-	circle.data[0] = 8; //start speed
+	circle.data[0] = 6.5; //start speed
 	with(circle) event_user(0);
 }
 if(t == current + 490)
@@ -344,14 +363,14 @@ if(t == current + 490)
 	circle.angle = random(360);
 	circle.mode = 3;
 	circle.color = scrDTBGetRandomColor();
-	circle.data[0] = 8; //start speed
+	circle.data[0] = 6.5; //start speed
 	with(circle) event_user(0);
 }
 if(t == current + 590)
 {
 	with(objAlgBulletSpawned)
 	{
-		speed = 8;
+		speed = 6.5;
 		gravity_direction = direction;
 		gravity = 0.1;
 		image_alpha = 1;
@@ -364,7 +383,7 @@ if(t == current + 590)
 		spawner.mode = 3;
 		spawner.data[0] = 1; //включить ускорение
 		spawner.data[1] = choose(-1,1);
-		spawner.targetSpeed = 8;
+		spawner.targetSpeed = 6.5;
 		spawnY += 300;
 	}
 }
@@ -501,6 +520,8 @@ if(t == current)
 	platform.color = make_color_rgb(39,71,64);
 	
 	spawnY = 220;
+	lineSpawnY = 100;
+	lineDirection = 1;
 }
 if(t == current + 90)
 {
@@ -535,6 +556,22 @@ if(t == current + 90 ||
 	with(circle) event_user(0);
 	
 	spawnY += 240;
+	
+	if(lineDirection == 1)
+	{
+		lineSpawner = spawner_create_layer( 300, lineSpawnY, "Bullets", 1, objAlgBulletSpawned, 12 );
+		lineSpawner.hspeed = 50;
+		lineDirection = -1;
+	}
+	else
+	{
+		lineSpawner = spawner_create_layer( 900, lineSpawnY, "Bullets", 1, objAlgBulletSpawned, 12 );
+		lineSpawner.hspeed = -50;
+		lineDirection = 1;
+	}
+	lineSpawner.mode = 5;
+	
+	lineSpawnY += 50;
 }
 if(t == current + 100 ||
    t == current + 130 ||
@@ -553,6 +590,11 @@ if(t == current + 200)
 	with(objAlgCircle)
 	{
 		data[0] = 2;	
+	}
+	with(objAlgBulletSpawned)
+	{
+		direction = irandom_range( 240, 300 );
+		speed = random_range(2,4);
 	}
 	spawnY = 220;
 }
@@ -779,21 +821,21 @@ if(t == current + 95)
 }
 if(t == current + 120)
 {
-	for(var i = 0; i <= 1200; i += 32)
+	for(var i = 0; i <= 912; i += 32)
 	{
-		bullet = instance_create_layer(i,942,"Bullets",objAlgBullet);
+		bullet = instance_create_layer(-30,i,"Bullets",objAlgBullet);
 		bullet.sprite_index = sprAlgSphereColored;
-		bullet.color = scrDTBGetRandomColor();
 		bullet.trail = true;
+		bullet.mode = 9;
 		instance_set_scale(bullet,2);
-		instance_move_to_y(bullet,510,40);
+		instance_move_to_x(bullet,530,40);
 		
-		bullet = instance_create_layer(i,-30,"Bullets",objAlgBullet);
+		bullet = instance_create_layer(1230,i,"Bullets",objAlgBullet);
 		bullet.sprite_index = sprAlgSphereColored;
-		bullet.color = scrDTBGetRandomColor();
 		bullet.trail = true;
+		bullet.mode = 9;
 		instance_set_scale(bullet,2);
-		instance_move_to_y(bullet,402,40);
+		instance_move_to_x(bullet,670,40);
 	}
 }
 if(t == current + 160)
@@ -801,10 +843,21 @@ if(t == current + 160)
 	with(objAlgBullet)
 	{
 		outsideDelete = true;
-		if(y < 456) //верхняя стена
-			instance_move_to_y(id,-30,40);
+		if(data[0] == 0)
+		{			
+			if(x < 600) //верхняя стена
+				instance_move_to_x(id,-30,40);
+			else
+				instance_move_to_x(id,1230,40);
+		}
 		else
-			instance_move_to_y(id,942,40);
+		{
+			direction = point_direction( oPlayer.x, oPlayer.y, x, y );
+			speed = 10;
+			gravity_direction = direction;
+			image_angle = direction;
+			gravity = 1;
+		}
 	}
 }
 if(t == current + 190)
@@ -833,19 +886,21 @@ if(t == current + 295)
 }
 if(t == current + 330)
 {
-	for(var i = 0; i <= 912; i += 32)
+	for(var i = 0; i <= 1200; i += 32)
 	{
-		bullet = instance_create_layer(-30,i,"Bullets",objAlgBullet);
+		bullet = instance_create_layer(i,942,"Bullets",objAlgBullet);
 		bullet.sprite_index = sprAlgSphereColored;
+		bullet.color = scrDTBGetRandomColor();
 		bullet.trail = true;
 		instance_set_scale(bullet,2);
-		instance_move_to_x(bullet,550,40);
+		instance_move_to_y(bullet,530,40);
 		
-		bullet = instance_create_layer(1230,i,"Bullets",objAlgBullet);
+		bullet = instance_create_layer(i,-30,"Bullets",objAlgBullet);
 		bullet.sprite_index = sprAlgSphereColored;
+		bullet.color = scrDTBGetRandomColor();
 		bullet.trail = true;
 		instance_set_scale(bullet,2);
-		instance_move_to_x(bullet,650,40);
+		instance_move_to_y(bullet,382,40);
 	}
 }
 if(t == current + 370)
@@ -853,15 +908,27 @@ if(t == current + 370)
 	with(objAlgBullet)
 	{
 		outsideDelete = true;
-		if(x < 600) //верхняя стена
-			instance_move_to_x(id,-30,40);
+		if(data[0] == 0)
+		{
+			if(y < 456) //верхняя стена
+				instance_move_to_y(id,-30,40);
+			else
+				instance_move_to_y(id,942,40);
+		}
 		else
-			instance_move_to_x(id,1230,40);
+		{
+			direction = point_direction( oPlayer.x, oPlayer.y, x, y );
+			speed = 10;
+			gravity_direction = direction;
+			image_angle = direction;
+			gravity = 1;
+		}
 	}
+	
 }
 if(t == current + 380)
 {
-	instance_destroy(oMoveXCommand);
+	instance_destroy(oMoveYCommand);
 	with(objAlgBullet)
 	{
 		direction = random(360);
@@ -919,7 +986,7 @@ if(t == next - 10)
 	}
 	
 	room_set_infinite_jump(false);
-	
+	oPlayer.CurrentAirJumpCount = 0;	
 }
 
 #endregion
@@ -929,6 +996,7 @@ next = attacks[| 11];
 
 if(t == current)
 {
+	
 	bullet = instance_create_layer( 600, 250, "Bullets", objAlgBullet );
 	bullet.image_alpha = 0;
 	bullet.mode = 10;
@@ -948,9 +1016,21 @@ if(t == current)
 {
 	spawner = spawner_create_layer( 96, 912, "Bullets", 6, objAlgBulletSpawned, 400 );
 	spawner.mode = 11;
+	spawner.data[0] = 0;
 	
 	spawner = spawner_create_layer( 1200-96, 912, "Bullets", 6, objAlgBulletSpawned, 400 );
 	spawner.mode = 11;
+	spawner.data[0] = 0;
+	
+	spawner = spawner_create_layer( 0, 700, "Bullets", 6, objAlgBulletSpawned, 400 );
+	spawner.mode = 11;
+	spawner.data[0] = 1;
+	spawner.direction = 80;
+	
+	spawner = spawner_create_layer( 1200, 700, "Bullets", 6, objAlgBulletSpawned, 400 );
+	spawner.mode = 11;
+	spawner.data[0] = 1;
+	spawner.direction = 100;
 }
 if(t == current + 380)
 {

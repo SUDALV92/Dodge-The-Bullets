@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndSnap",
-  "duration": 0.595476,
+  "duration": 0.0,
   "parent": {
     "name": "testMusic",
     "path": "folders/Sounds/testMusic.yy",

@@ -70,4 +70,14 @@ switch(mode)
 			alarm[0] = irandom_range(20,25);
 		}
 		break;
+	case 8:
+		star = instance_create_depth( x, y, depth , objAlgBullet );
+		star.sprite_index = sprite_index;
+		star.color = color;
+		instance_set_scale( star, image_xscale );
+		star.mode = 8;
+		star.data[0] = -1;
+		star.direction = point_direction( x, y, 600, 450 ) + irandom_range( -30, 30 );
+		star.speed = 4;
+		break;
 }

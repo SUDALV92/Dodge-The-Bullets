@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "seJump",
-  "duration": 0.15593,
+  "duration": 0.0,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

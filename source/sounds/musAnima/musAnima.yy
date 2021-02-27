@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "musAnima",
-  "duration": 118.940514,
+  "duration": 0.0,
   "parent": {
     "name": "testMusic",
     "path": "folders/Sounds/testMusic.yy",

@@ -33,5 +33,5 @@ if( surfaceCopied )
 	{
 		drawY = 600;	
 	}
-	draw_text_outline(600,300,"YOU HAVE TO DODGE THIS BULLET",color,c_white);
+	draw_text_outline(600,300,"YOU HAD TO DODGE THIS BULLET",color,c_white);
 }

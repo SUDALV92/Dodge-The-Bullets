@@ -24,7 +24,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"96417335-d225-406c-b58a-d1ef51f1084a","path":"sprites/sSpikeRight/sSpikeRight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"96417335-d225-406c-b58a-d1ef51f1084a","path":"sprites/sSpikeRight/sSpikeRight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"96417335-d225-406c-b58a-d1ef51f1084a","path":"sprites/sSpikeRight/sSpikeRight.yy",},"LayerId":{"name":"259a6408-9d6f-473a-a02a-e80feda1f3a0","path":"sprites/sSpikeRight/sSpikeRight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sSpikeRight","path":"sprites/sSpikeRight/sSpikeRight.yy",},"resourceVersion":"1.0","name":"96417335-d225-406c-b58a-d1ef51f1084a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7e66c27a-bf18-454d-bf01-e548026f5f83","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96417335-d225-406c-b58a-d1ef51f1084a","path":"sprites/sSpikeRight/sSpikeRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3ce3c5ec-62c6-4b87-a9de-3db7a34bd005","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96417335-d225-406c-b58a-d1ef51f1084a","path":"sprites/sSpikeRight/sSpikeRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},

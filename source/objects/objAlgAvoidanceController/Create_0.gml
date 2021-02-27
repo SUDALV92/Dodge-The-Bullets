@@ -17,8 +17,10 @@ ds_list_add(attacks,
 );
 
 circle = noone;
+nextRadius = 0;
 whiteAlpha = 0;
 avoidance_set_step(attacks[| 0]);
+practiceEnabled = false;
 
 ///////////////////////////////
 /*instance_destroy(objAlgBackground);

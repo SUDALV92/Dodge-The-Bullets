@@ -34,6 +34,7 @@ switch(mode)
 		data[0] = Spawner.data[0];
 		sprite_index = sprAlgStar;
 		color = scrDTBGetRandomColor();
+		instance_set_scale(id,2);
 		switch(data[0])
 		{
 			case -1:
@@ -54,9 +55,9 @@ switch(mode)
 		y = y + irandom_range(-150,150);
 		sprite_index = sprAlgKunaiColored;
 		if(x < 600)
-			direction = irandom_range(1,5) * Spawner.data[1];		
+			direction = irandom_range(3,8) * Spawner.data[1];		
 		else
-			direction = irandom_range(1,5) * Spawner.data[1] + 180;
+			direction = irandom_range(3,8) * Spawner.data[1] + 180;
 			
 		Spawner.data[1] *= -1;
 			
@@ -66,7 +67,7 @@ switch(mode)
 		switch(data[0])
 		{
 			case 0:
-				speed = 7;
+				speed = 5;
 				break;
 			case 1:
 				speed = Spawner.targetSpeed;
@@ -75,6 +76,11 @@ switch(mode)
 				Spawner.targetSpeed += 0.2;
 				break;
 		}		
+		break;
+	case 5:
+		sprite_index = sprAlgSphereColored;
+		//instance_set_scale( id, 2 );
+		color = scrDTBGetRandomColor();
 		break;
 	case 6:
 		xx = irandom_range(0,1200);
@@ -122,12 +128,29 @@ switch(mode)
 		}
 		break;
 	case 11:
+		data[0] = Spawner.data[0];		
 		sprite_index = sprAlgWaveColored;
 		color = scrDTBGetRandomColor();
 		image_alpha = 0;
 		instance_change_alpha( id, 1, 30 );
-		direction = irandom_range( 60, 120 );
-		speed = random_range( 8, 12 );
+		switch(data[0])
+		{
+			case 0:
+				direction = irandom_range( 60, 120 );
+				speed = random_range( 8, 12 );
+				break;
+			case 1:
+				if(Spawner.direction < 90)
+				{
+					direction = irandom_range( 40, 60 );	
+				}
+				else
+				{
+					direction = irandom_range( 120, 140 );	
+				}
+				speed = random_range( 15, 20 );
+				break;
+		}
 		gravity = 0.1;		
 		break;
 }

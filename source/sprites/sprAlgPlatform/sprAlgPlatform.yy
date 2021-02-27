@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ddc8240d-9041-4872-8210-fd6bdc4a2341","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ddc8240d-9041-4872-8210-fd6bdc4a2341","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"LayerId":{"name":"dad6073e-f155-429f-a592-23c705178a76","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprAlgPlatform","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","name":"ddc8240d-9041-4872-8210-fd6bdc4a2341","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4e471451-f544-4b5e-9e5e-427d89a266fd","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4e471451-f544-4b5e-9e5e-427d89a266fd","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"LayerId":{"name":"5a627d7e-c554-4f53-9a2a-a9ea5663eea9","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprAlgPlatform","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","name":"4e471451-f544-4b5e-9e5e-427d89a266fd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprAlgPlatform","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8f6c4c13-4f94-49f7-865e-b6caa723b03f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ddc8240d-9041-4872-8210-fd6bdc4a2341","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2824bfd0-a648-444b-9110-abb07ff59da3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4e471451-f544-4b5e-9e5e-427d89a266fd","path":"sprites/sprAlgPlatform/sprAlgPlatform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dad6073e-f155-429f-a592-23c705178a76","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5a627d7e-c554-4f53-9a2a-a9ea5663eea9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "DodgeTheBullets",

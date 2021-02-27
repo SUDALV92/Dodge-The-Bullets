@@ -24,10 +24,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":{"name":"b86043c0-5454-44e7-91d0-01a2688413b8","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"361a1a47-0686-40e7-8ca5-63146d4d2441","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+    {"compositeImage":{"FrameId":{"name":"361a1a47-0686-40e7-8ca5-63146d4d2441","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"361a1a47-0686-40e7-8ca5-63146d4d2441","path":"sprites/sPlayerJump/sPlayerJump.yy",},"LayerId":{"name":"b86043c0-5454-44e7-91d0-01a2688413b8","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","name":"361a1a47-0686-40e7-8ca5-63146d4d2441","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"13dd4eab-6c93-496d-9e0c-b8428c1f654a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d67f6b6d-6d2f-4b1a-b2f7-c33be864306c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"361a1a47-0686-40e7-8ca5-63146d4d2441","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7bd04e94-2d54-4ab7-be47-4b83effcc282","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ce9eab4-6cf3-4300-9d33-d563188e7210","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dfeac27e-7858-4f05-920f-b894c705e173","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"361a1a47-0686-40e7-8ca5-63146d4d2441","path":"sprites/sPlayerJump/sPlayerJump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},

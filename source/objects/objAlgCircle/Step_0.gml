@@ -54,6 +54,7 @@ if(hold)
 					instance_set_scale( trailBullet, scale);
 					trailBullet.image_angle = currentAngle;
 					trailBullet.mode = 11;
+					trailBullet.color = color;
 					trailBullet.data[0] = 1;
 				}
 				break;
@@ -74,7 +75,7 @@ switch(mode)
 			angle += 0.5;
 		}
 		radius += data[0];
-		data[0] += 0.3;
+		data[0] += 0.25;
 		break;
 	case 4:
 		if(x < 600)
@@ -135,8 +136,8 @@ switch(mode)
 		{
 			data[1] = 0;
 			radius += data[0];
-			if(data[0] > 0.3)
-				data[0] -= 0.05;
+			if(data[0] > 0.5)
+				data[0] -= 0.06;
 		}
 		break;
 }

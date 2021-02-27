@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "seShoot",
-  "duration": 0.369263,
+  "duration": 0.0,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",
